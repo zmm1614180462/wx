@@ -1,0 +1,583 @@
+2017-02-17 11:22:18,789 [Thread-2:140198490273536] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 9, in hello
+    print(zzz)
+NameError: name 'zzz' is not defined
+2017-02-17 11:25:42,253 [Thread-2:139881310316288] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.hello didn't return an HttpResponse object. It returned None instead.
+2017-02-17 11:27:32,668 [Thread-2:139830768604928] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 10, in hello
+    print(zzz)
+NameError: name 'zzz' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 16, in hello
+    logging.errors(e)
+AttributeError: module 'logging' has no attribute 'errors'
+2017-02-17 11:43:13,280 [Thread-3:140130213365504] [django.request:152] [WARNING]- Not Found: /myapp/session
+2017-02-17 16:11:45,778 [Thread-14:140490083116800] [django.request:152] [WARNING]- Not Found: /myapp/
+2017-02-17 16:11:57,591 [Thread-19:140490125080320] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.hello didn't return an HttpResponse object. It returned None instead.
+2017-02-17 16:11:58,388 [Thread-20:140490074724096] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.hello didn't return an HttpResponse object. It returned None instead.
+2017-02-17 16:12:35,151 [Thread-24:140490361427712] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.hello didn't return an HttpResponse object. It returned None instead.
+2017-02-17 16:12:52,913 [Thread-2:140416154654464] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.hello didn't return an HttpResponse object. It returned None instead.
+2017-02-17 16:13:18,961 [Thread-3:140416154654464] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.hello didn't return an HttpResponse object. It returned None instead.
+2017-02-17 16:13:23,147 [Thread-2:139938773513984] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.hello didn't return an HttpResponse object. It returned None instead.
+2017-02-17 16:14:37,941 [Thread-3:139938773513984] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.hello didn't return an HttpResponse object. It returned None instead.
+2017-02-17 16:14:47,019 [Thread-2:140008722323200] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 510, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 9, in hello
+    return render(request, 'hello.html', {'time': now()})
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 574, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 6: 'static'. Did you forget to register or load this tag?
+2017-02-17 16:24:08,889 [Thread-54:140008722323200] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 201, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: css/hello.css
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 9, in hello
+    return render(request, 'hello.html', {'time': now()})
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 68, in render
+    reraise(exc, self.backend)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 201, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: css/hello.css
+2017-02-17 16:33:18,106 [Thread-57:140008722323200] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 9, in hello
+    return render(request, 'hello.html', {'time': now()})
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 439, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns)
+django.urls.exceptions.NoReverseMatch: Reverse for 'css/hello.css' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-02-17 16:34:02,094 [Thread-58:140008722323200] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 9, in hello
+    return render(request, 'hello.html', {'time': now()})
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 439, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns)
+django.urls.exceptions.NoReverseMatch: Reverse for 'css/hello.css' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-02-17 16:34:21,751 [Thread-62:140008722323200] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 9, in hello
+    return render(request, 'hello.html', {'time': now()})
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 439, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns)
+django.urls.exceptions.NoReverseMatch: Reverse for 'css/hello.css' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-02-17 16:34:22,977 [Thread-63:140008722323200] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 9, in hello
+    return render(request, 'hello.html', {'time': now()})
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 439, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns)
+django.urls.exceptions.NoReverseMatch: Reverse for 'css/hello.css' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-02-17 16:34:23,887 [Thread-64:140008722323200] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 9, in hello
+    return render(request, 'hello.html', {'time': now()})
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 439, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns)
+django.urls.exceptions.NoReverseMatch: Reverse for 'css/hello.css' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-02-17 16:34:42,581 [Thread-65:140008722323200] [django.request:124] [ERROR]- Internal Server Error: /myapp/hello
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 9, in hello
+    return render(request, 'hello.html', {'time': now()})
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 439, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns)
+django.urls.exceptions.NoReverseMatch: Reverse for 'css/hello.css' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-02-18 08:20:23,737 [Thread-14:139967095346944] [django.request:152] [WARNING]- Not Found: /favicon.ico
+2017-02-18 08:20:27,219 [Thread-15:139967095346944] [django.request:152] [WARNING]- Not Found: /myapp/
+2017-02-18 08:20:57,672 [Thread-22:139967137310464] [django.request:158] [WARNING]- Forbidden (CSRF cookie not set.): /myapp/hello
+2017-02-18 08:30:36,651 [Thread-23:139967137310464] [django.request:158] [WARNING]- Forbidden (CSRF cookie not set.): /myapp/hello
+2017-02-18 08:30:37,528 [Thread-24:139967137310464] [django.request:158] [WARNING]- Forbidden (CSRF cookie not set.): /myapp/hello
+2017-02-18 08:30:37,916 [Thread-25:139967137310464] [django.request:158] [WARNING]- Forbidden (CSRF cookie not set.): /myapp/hello
+2017-02-18 08:30:38,160 [Thread-26:139967137310464] [django.request:158] [WARNING]- Forbidden (CSRF cookie not set.): /myapp/hello
+2017-02-18 08:30:40,593 [Thread-27:139967137310464] [django.request:158] [WARNING]- Forbidden (CSRF cookie not set.): /myapp/hello
+2017-02-18 08:30:41,837 [Thread-28:139967137310464] [django.request:158] [WARNING]- Forbidden (CSRF cookie not set.): /myapp/hello
+2017-02-18 08:59:44,688 [Thread-20:140549681817344] [django.request:152] [WARNING]- Not Found: /users/1/
+2017-02-18 08:59:46,253 [Thread-23:140549681817344] [django.request:152] [WARNING]- Not Found: /users/1/
+2017-02-18 09:01:59,559 [Thread-34:140549681817344] [django.request:124] [ERROR]- Internal Server Error: /users/2
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = self.process_request(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/middleware/common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/middleware/common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/users/2/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2017-02-19 14:05:33,047 [Thread-15:139955188803328] [django.request:152] [WARNING]- Not Found: /favicon.ico
+2017-02-19 14:11:11,183 [Thread-18:140703682467584] [django.request:152] [WARNING]- Not Found: /admin/upload/kindeditor
+2017-02-19 14:11:45,476 [Thread-19:140703682467584] [django.request:152] [WARNING]- Not Found: /admin/upload/kindeditor
+2017-02-19 14:36:21,543 [Thread-8:140205608642304] [django.request:152] [WARNING]- Not Found: /admin/upload/kindeditor
+2017-02-19 15:02:55,377 [Thread-6:140311983445760] [django.request:158] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2017-02-19 15:27:35,388 [Thread-15:139708549420800] [django.request:124] [ERROR]- Internal Server Error: /admin/upload/kindeditor
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/upload.py", line 14, in upload_image
+    result = image_upload(files,dir_name)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/upload.py", line 32, in image_upload
+    relative_path_file = upload_generation_dir(dir_name)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/upload.py", line 21, in upload_generation_dir
+    if not os.path.exists(settings):
+  File "/home/zmm/.pyenv/versions/3.5.0/lib/python3.5/genericpath.py", line 19, in exists
+    os.stat(path)
+TypeError: argument should be string, bytes or integer, not LazySettings
+2017-02-19 15:39:26,386 [Thread-8:140046900090624] [django.request:124] [ERROR]- Internal Server Error: /admin/upload/kindeditor
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/upload.py", line 13, in upload_image
+    result = image_upload(files,dir_name)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/upload.py", line 30, in image_upload
+    relative_path_file = upload_generation_dir(dir_name)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/upload.py", line 21, in upload_generation_dir
+    os.makedirs()
+TypeError: makedirs() missing 1 required positional argument: 'name'
+2017-02-19 15:40:13,446 [Thread-8:140328684111616] [django.request:124] [ERROR]- Internal Server Error: /admin/upload/kindeditor
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/upload.py", line 13, in upload_image
+    result = image_upload(files,dir_name)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/upload.py", line 39, in image_upload
+    open(path_file,'web').write(files.file.read())
+ValueError: invalid mode: 'web'
+2017-02-19 15:40:57,905 [Thread-5:140507841820416] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/2c092e22e-f676-11e6-925a-645a04c15fca.png
+2017-02-19 15:50:00,147 [Thread-3:139727912326912] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/203c553aa-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:51:33,172 [Thread-39:140469020002048] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:54:16,979 [Thread-40:140469020002048] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:56:12,802 [Thread-46:140469003216640] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:56:13,891 [Thread-47:140469011609344] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:56:14,458 [Thread-48:140468650243840] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:56:14,776 [Thread-49:140468994823936] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:56:15,043 [Thread-50:140469031892736] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:56:15,339 [Thread-51:140469020002048] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:56:15,674 [Thread-52:140469003216640] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:56:30,293 [Thread-55:140469020002048] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:56:30,573 [Thread-56:140469020002048] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:56:30,811 [Thread-57:140469020002048] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:56:46,759 [Thread-63:140469020002048] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/2f61fcdba-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:59:35,163 [Thread-64:140469020002048] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:59:35,954 [Thread-65:140469011609344] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:59:36,358 [Thread-66:140469003216640] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:59:36,697 [Thread-67:140469031892736] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:59:37,015 [Thread-68:140468994823936] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:59:37,336 [Thread-69:140468650243840] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:59:37,741 [Thread-70:140469020002048] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 15:59:38,141 [Thread-71:140469020002048] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/23b34d96e-f678-11e6-925a-645a04c15fca.png
+2017-02-19 16:25:32,011 [Thread-5:140573375084288] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/2fa753ba8-f67c-11e6-925a-645a04c15fca.png
+2017-02-19 16:29:19,803 [Thread-2:140654662919936] [django.request:152] [WARNING]- Not Found: /uploads/
+2017-02-19 16:32:28,452 [Thread-14:140654654527232] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/2fa753ba8-f67c-11e6-925a-645a04c15fca.png
+2017-02-19 16:35:44,365 [Thread-5:140647336441600] [django.request:152] [WARNING]- Not Found: /uploads/kindeditor/2017/26771e552-f67e-11e6-925a-645a04c15fca.png
+2017-02-19 17:34:17,681 [Thread-2:140445413009152] [django.request:152] [WARNING]- Not Found: /myapp/hello
+2017-02-19 17:34:19,868 [Thread-3:140445404616448] [django.request:152] [WARNING]- Not Found: /myapp/
+2017-02-20 10:59:10,332 [Thread-2:139811251812096] [django.request:152] [WARNING]- Not Found: /
+2017-02-20 10:59:10,960 [Thread-3:139811243419392] [django.request:152] [WARNING]- Not Found: /favicon.ico
+2017-02-20 10:59:12,670 [Thread-4:139811235026688] [django.request:152] [WARNING]- Not Found: /
+2017-02-20 10:59:20,905 [Thread-8:139811243419392] [django.request:152] [WARNING]- Not Found: /myapp/hello
+2017-02-20 11:10:10,671 [Thread-3:140240893056768] [django.request:152] [WARNING]- Not Found: /
+2017-02-20 11:54:55,947 [Thread-19:139993160259328] [django.request:124] [ERROR]- Internal Server Error: /myapp/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 59, in index
+    return render(request, 'index.html', locals())
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 439, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-02-20 11:55:01,104 [Thread-20:139993160259328] [django.request:124] [ERROR]- Internal Server Error: /myapp/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 59, in index
+    return render(request, 'index.html', locals())
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 439, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-02-20 11:58:34,724 [Thread-31:139993180280576] [django.request:152] [WARNING]- Not Found: /
+2017-02-20 12:04:40,328 [Thread-4:140201743955712] [django.request:152] [WARNING]- Not Found: /

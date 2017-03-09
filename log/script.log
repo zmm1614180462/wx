@@ -1,0 +1,1425 @@
+2017-02-20 13:52:33,841 [Thread-9:140286562105088] [django.request:152] [base:get_response] [WARNING]- Not Found: /
+2017-02-20 13:54:38,633 [Thread-2:140064017352448] [django.request:152] [base:get_response] [WARNING]- Not Found: /myapp/
+2017-02-20 13:54:39,821 [Thread-3:140064017352448] [django.request:152] [base:get_response] [WARNING]- Not Found: /
+2017-02-20 13:54:43,175 [Thread-4:140064006510336] [django.request:152] [base:get_response] [WARNING]- Not Found: /
+2017-02-20 13:56:21,010 [Thread-5:140362484020992] [django.request:152] [base:get_response] [WARNING]- Not Found: /,,
+2017-02-20 14:33:30,601 [Thread-3:140238517167872] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 1013, in find_library
+    return parser.libraries[name]
+KeyError: 'myfilter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 110, in article
+    return render(request,'article.html',locals())
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 1070, in load
+    lib = find_library(parser, name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 1017, in find_library
+    name, "\n".join(sorted(parser.libraries.keys())),
+django.template.exceptions.TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+rest_framework
+static
+staticfiles
+tz
+2017-02-20 14:39:54,551 [Thread-4:140238517167872] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 1013, in find_library
+    return parser.libraries[name]
+KeyError: 'myfilter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 110, in article
+    return render(request,'article.html',locals())
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 1070, in load
+    lib = find_library(parser, name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 1017, in find_library
+    name, "\n".join(sorted(parser.libraries.keys())),
+django.template.exceptions.TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+rest_framework
+static
+staticfiles
+tz
+2017-02-20 14:39:56,952 [Thread-5:140238517167872] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 1013, in find_library
+    return parser.libraries[name]
+KeyError: 'myfilter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 110, in article
+    return render(request,'article.html',locals())
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 1070, in load
+    lib = find_library(parser, name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 1017, in find_library
+    name, "\n".join(sorted(parser.libraries.keys())),
+django.template.exceptions.TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+rest_framework
+static
+staticfiles
+tz
+2017-02-20 14:39:57,820 [Thread-6:140238517167872] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 1013, in find_library
+    return parser.libraries[name]
+KeyError: 'myfilter'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 110, in article
+    return render(request,'article.html',locals())
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 1070, in load
+    lib = find_library(parser, name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 1017, in find_library
+    name, "\n".join(sorted(parser.libraries.keys())),
+django.template.exceptions.TemplateSyntaxError: 'myfilter' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+rest_framework
+static
+staticfiles
+tz
+2017-02-20 14:40:52,383 [Thread-2:139786575857408] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 110, in article
+    return render(request,'article.html',locals())
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 439, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-02-20 14:42:15,581 [Thread-3:139786575857408] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 110, in article
+    return render(request,'article.html',locals())
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 439, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns)
+django.urls.exceptions.NoReverseMatch: Reverse for 'logout' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-02-20 14:42:18,448 [Thread-2:140332750345984] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 110, in article
+    return render(request,'article.html',locals())
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 439, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns)
+django.urls.exceptions.NoReverseMatch: Reverse for 'comment_post' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-02-20 14:44:19,282 [Thread-13:140052323161856] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /logout
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.do_logout didn't return an HttpResponse object. It returned None instead.
+2017-02-24 08:20:43,371 [Thread-13:140595124623104] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-07 17:26:10,907 [Thread-25:140131034261248] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-07 17:26:17,617 [Thread-26:140131034261248] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 110, in article
+    return render(request,'article.html',locals())
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 439, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-03-07 17:26:28,797 [Thread-28:140131045627648] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 110, in article
+    return render(request,'article.html',locals())
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 439, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-03-07 18:29:08,178 [Thread-2:139963772167936] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/myapp/article/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1543, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 79, in __init__
+    self.get_results(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 170, in get_results
+    paginator = self.model_admin.get_paginator(request, self.queryset, self.list_per_page)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 706, in get_paginator
+    return self.paginator(queryset, per_page, orphans, allow_empty_first_page)
+TypeError: 'int' object is not callable
+2017-03-07 18:29:09,677 [Thread-3:139963772167936] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/myapp/article/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1543, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 79, in __init__
+    self.get_results(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 170, in get_results
+    paginator = self.model_admin.get_paginator(request, self.queryset, self.list_per_page)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 706, in get_paginator
+    return self.paginator(queryset, per_page, orphans, allow_empty_first_page)
+TypeError: 'int' object is not callable
+2017-03-07 18:29:36,366 [Thread-2:140227345790720] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/myapp/article/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1543, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 79, in __init__
+    self.get_results(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 170, in get_results
+    paginator = self.model_admin.get_paginator(request, self.queryset, self.list_per_page)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 706, in get_paginator
+    return self.paginator(queryset, per_page, orphans, allow_empty_first_page)
+TypeError: 'tuple' object is not callable
+2017-03-07 18:34:03,650 [Thread-2:139736006866688] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/myapp/article/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1543, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 79, in __init__
+    self.get_results(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 170, in get_results
+    paginator = self.model_admin.get_paginator(request, self.queryset, self.list_per_page)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 706, in get_paginator
+    return self.paginator(queryset, per_page, orphans, allow_empty_first_page)
+TypeError: 'tuple' object is not callable
+2017-03-07 18:34:27,134 [Thread-2:140679546263296] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/myapp/article/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1543, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 79, in __init__
+    self.get_results(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 170, in get_results
+    paginator = self.model_admin.get_paginator(request, self.queryset, self.list_per_page)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 706, in get_paginator
+    return self.paginator(queryset, per_page, orphans, allow_empty_first_page)
+TypeError: 'tuple' object is not callable
+2017-03-07 18:34:28,459 [Thread-3:140679546263296] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/myapp/article/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1543, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 79, in __init__
+    self.get_results(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/views/main.py", line 170, in get_results
+    paginator = self.model_admin.get_paginator(request, self.queryset, self.list_per_page)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/contrib/admin/options.py", line 706, in get_paginator
+    return self.paginator(queryset, per_page, orphans, allow_empty_first_page)
+TypeError: 'tuple' object is not callable
+2017-03-08 09:42:55,522 [Thread-25:139806336079616] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-08 12:43:03,444 [Thread-3:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/2014/css/base.css
+2017-03-08 12:43:03,446 [Thread-4:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/2014/css/index.css
+2017-03-08 12:43:03,524 [Thread-6:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-06-25/b28d7f80a48500b920da24827332938d.gif
+2017-03-08 12:43:03,526 [Thread-9:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 12:43:03,527 [Thread-5:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 12:43:03,529 [Thread-7:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2015-04-10/7d49c3bc8c69c01ece56611f5a7148be.png
+2017-03-08 12:43:03,531 [Thread-10:140638234343168] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 12:43:03,533 [Thread-8:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-02-01/c9de5278fe86fb581d5cc4f9b690e589.gif
+2017-03-08 12:43:03,554 [Thread-11:140638234343168] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 12:43:03,556 [Thread-12:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 12:43:03,558 [Thread-13:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 12:43:22,628 [Thread-14:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/2014/css/base.css
+2017-03-08 12:43:22,631 [Thread-15:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/2014/css/index.css
+2017-03-08 13:01:31,103 [Thread-40:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 13:01:31,134 [Thread-41:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-06-25/b28d7f80a48500b920da24827332938d.gif
+2017-03-08 13:01:31,136 [Thread-42:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2015-04-10/7d49c3bc8c69c01ece56611f5a7148be.png
+2017-03-08 13:01:31,137 [Thread-43:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 13:01:31,299 [Thread-47:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 13:01:31,312 [Thread-46:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-02-01/c9de5278fe86fb581d5cc4f9b690e589.gif
+2017-03-08 13:01:31,317 [Thread-48:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 13:01:31,319 [Thread-49:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 13:01:31,325 [Thread-45:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 13:01:31,361 [Thread-54:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 13:06:02,259 [Thread-64:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 13:06:02,287 [Thread-65:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-06-25/b28d7f80a48500b920da24827332938d.gif
+2017-03-08 13:06:02,369 [Thread-66:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2015-04-10/7d49c3bc8c69c01ece56611f5a7148be.png
+2017-03-08 13:06:02,377 [Thread-70:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 13:06:02,380 [Thread-67:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-02-01/c9de5278fe86fb581d5cc4f9b690e589.gif
+2017-03-08 13:06:02,387 [Thread-68:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 13:06:02,389 [Thread-69:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 13:06:02,405 [Thread-71:140638234343168] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 13:06:02,425 [Thread-72:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 13:06:04,238 [Thread-76:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 13:06:04,311 [Thread-77:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-06-25/b28d7f80a48500b920da24827332938d.gif
+2017-03-08 13:06:04,322 [Thread-78:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2015-04-10/7d49c3bc8c69c01ece56611f5a7148be.png
+2017-03-08 13:06:04,326 [Thread-80:140638234343168] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 13:06:04,327 [Thread-79:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-02-01/c9de5278fe86fb581d5cc4f9b690e589.gif
+2017-03-08 13:06:04,329 [Thread-81:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 13:06:04,333 [Thread-82:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 13:06:04,354 [Thread-83:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 13:06:04,359 [Thread-84:140638234343168] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 13:06:20,188 [Thread-88:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 13:06:20,222 [Thread-89:140638234343168] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-06-25/b28d7f80a48500b920da24827332938d.gif
+2017-03-08 13:06:20,227 [Thread-90:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2015-04-10/7d49c3bc8c69c01ece56611f5a7148be.png
+2017-03-08 13:06:20,241 [Thread-91:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-02-01/c9de5278fe86fb581d5cc4f9b690e589.gif
+2017-03-08 13:06:20,255 [Thread-92:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 13:06:20,282 [Thread-93:140638234343168] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 13:06:20,294 [Thread-94:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 13:06:20,316 [Thread-98:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 13:06:20,346 [Thread-101:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 13:06:20,382 [Thread-104:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 13:07:58,934 [Thread-112:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 13:07:58,939 [Thread-113:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-06-25/b28d7f80a48500b920da24827332938d.gif
+2017-03-08 13:07:58,965 [Thread-114:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2015-04-10/7d49c3bc8c69c01ece56611f5a7148be.png
+2017-03-08 13:07:58,969 [Thread-115:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-02-01/c9de5278fe86fb581d5cc4f9b690e589.gif
+2017-03-08 13:07:59,002 [Thread-116:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 13:07:59,010 [Thread-117:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 13:07:59,037 [Thread-118:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 13:07:59,044 [Thread-119:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 13:07:59,075 [Thread-123:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 13:07:59,088 [Thread-124:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 13:11:07,167 [Thread-136:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 13:11:07,192 [Thread-137:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-06-25/b28d7f80a48500b920da24827332938d.gif
+2017-03-08 13:11:07,203 [Thread-138:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2015-04-10/7d49c3bc8c69c01ece56611f5a7148be.png
+2017-03-08 13:11:07,211 [Thread-140:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 13:11:07,214 [Thread-139:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-02-01/c9de5278fe86fb581d5cc4f9b690e589.gif
+2017-03-08 13:11:07,222 [Thread-141:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 13:11:07,361 [Thread-146:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 13:11:07,376 [Thread-145:140638234343168] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 13:11:07,403 [Thread-147:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 13:11:07,473 [Thread-150:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 13:12:24,478 [Thread-161:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2015-04-10/7d49c3bc8c69c01ece56611f5a7148be.png
+2017-03-08 13:12:24,500 [Thread-159:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 13:12:24,503 [Thread-160:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-06-25/b28d7f80a48500b920da24827332938d.gif
+2017-03-08 13:12:24,506 [Thread-162:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-02-01/c9de5278fe86fb581d5cc4f9b690e589.gif
+2017-03-08 13:12:24,508 [Thread-163:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 13:12:24,511 [Thread-164:140638234343168] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 13:12:24,602 [Thread-169:140638234343168] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 13:12:24,609 [Thread-168:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 13:12:24,623 [Thread-170:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 13:12:24,689 [Thread-173:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 13:14:03,151 [Thread-183:140638234343168] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 13:14:03,231 [Thread-184:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-06-25/b28d7f80a48500b920da24827332938d.gif
+2017-03-08 13:14:03,234 [Thread-185:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2015-04-10/7d49c3bc8c69c01ece56611f5a7148be.png
+2017-03-08 13:14:03,235 [Thread-186:140638234343168] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-02-01/c9de5278fe86fb581d5cc4f9b690e589.gif
+2017-03-08 13:14:03,241 [Thread-187:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 13:14:03,243 [Thread-188:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 13:14:03,252 [Thread-189:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 13:14:03,302 [Thread-193:140638599407360] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 13:14:03,320 [Thread-194:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 13:14:03,351 [Thread-197:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 13:19:18,650 [Thread-207:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 13:19:18,669 [Thread-208:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-06-25/b28d7f80a48500b920da24827332938d.gif
+2017-03-08 13:19:18,692 [Thread-209:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2015-04-10/7d49c3bc8c69c01ece56611f5a7148be.png
+2017-03-08 13:19:18,703 [Thread-210:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-02-01/c9de5278fe86fb581d5cc4f9b690e589.gif
+2017-03-08 13:19:18,715 [Thread-211:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 13:19:18,730 [Thread-212:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 13:19:18,740 [Thread-213:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 13:19:19,019 [Thread-215:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 13:19:19,045 [Thread-214:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 13:19:19,093 [Thread-221:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 13:26:31,100 [Thread-231:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 13:26:31,114 [Thread-232:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-06-25/b28d7f80a48500b920da24827332938d.gif
+2017-03-08 13:26:31,130 [Thread-233:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2015-04-10/7d49c3bc8c69c01ece56611f5a7148be.png
+2017-03-08 13:26:31,172 [Thread-234:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-02-01/c9de5278fe86fb581d5cc4f9b690e589.gif
+2017-03-08 13:26:31,190 [Thread-235:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 13:26:31,201 [Thread-236:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 13:26:31,216 [Thread-237:140638591014656] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 13:26:31,235 [Thread-238:140638608062208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 13:26:31,260 [Thread-242:140638582621952] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 13:26:31,357 [Thread-245:140638618904320] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 13:30:36,285 [Thread-5:140445388261120] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 13:30:36,294 [Thread-10:140445145356032] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 13:30:36,295 [Thread-8:140445162141440] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-02-01/c9de5278fe86fb581d5cc4f9b690e589.gif
+2017-03-08 13:30:36,297 [Thread-9:140445153748736] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 13:30:36,299 [Thread-6:140445399103232] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-06-25/b28d7f80a48500b920da24827332938d.gif
+2017-03-08 13:30:36,303 [Thread-7:140445379868416] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2015-04-10/7d49c3bc8c69c01ece56611f5a7148be.png
+2017-03-08 13:30:36,378 [Thread-13:140445379868416] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 13:30:36,383 [Thread-14:140445388261120] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 13:30:36,388 [Thread-15:140445399103232] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 13:30:36,430 [Thread-19:140445153748736] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 13:36:43,783 [Thread-29:140445399103232] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 13:36:43,807 [Thread-30:140445388261120] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-06-25/b28d7f80a48500b920da24827332938d.gif
+2017-03-08 13:36:43,860 [Thread-32:140445399103232] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-02-01/c9de5278fe86fb581d5cc4f9b690e589.gif
+2017-03-08 13:36:43,864 [Thread-31:140445379868416] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2015-04-10/7d49c3bc8c69c01ece56611f5a7148be.png
+2017-03-08 13:36:43,866 [Thread-33:140445153748736] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 13:36:43,869 [Thread-34:140445388261120] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 13:36:43,880 [Thread-35:140445162141440] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 13:36:43,908 [Thread-36:140445145356032] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 13:36:43,955 [Thread-40:140445153748736] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 13:36:43,965 [Thread-43:140445145356032] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 13:44:45,267 [Thread-5:139969955882752] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 13:44:45,278 [Thread-7:139969947490048] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2015-04-10/7d49c3bc8c69c01ece56611f5a7148be.png
+2017-03-08 13:44:45,280 [Thread-6:139969964275456] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-06-25/b28d7f80a48500b920da24827332938d.gif
+2017-03-08 13:44:45,281 [Thread-8:139969939097344] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-02-01/c9de5278fe86fb581d5cc4f9b690e589.gif
+2017-03-08 13:44:45,287 [Thread-9:139969930704640] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 13:44:45,324 [Thread-10:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 13:44:45,359 [Thread-15:139969955882752] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 13:44:45,381 [Thread-14:139969939097344] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 13:44:45,390 [Thread-16:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 13:44:45,425 [Thread-19:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 13:56:12,650 [Thread-29:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 13:56:12,652 [Thread-31:139969964275456] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2015-04-10/7d49c3bc8c69c01ece56611f5a7148be.png
+2017-03-08 13:56:12,653 [Thread-30:139969947490048] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-06-25/b28d7f80a48500b920da24827332938d.gif
+2017-03-08 13:56:12,655 [Thread-34:139969930704640] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 13:56:12,658 [Thread-32:139969939097344] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-02-01/c9de5278fe86fb581d5cc4f9b690e589.gif
+2017-03-08 13:56:12,660 [Thread-33:139969955882752] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 13:56:12,794 [Thread-38:139969955882752] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 13:56:12,801 [Thread-39:139969930704640] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 13:56:12,807 [Thread-40:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 13:56:12,834 [Thread-43:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 13:56:39,801 [Thread-53:139969947490048] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 13:56:39,836 [Thread-55:139969939097344] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2015-04-10/7d49c3bc8c69c01ece56611f5a7148be.png
+2017-03-08 13:56:39,849 [Thread-54:139969930704640] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-06-25/b28d7f80a48500b920da24827332938d.gif
+2017-03-08 13:56:39,867 [Thread-56:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/newsfree/2015-02-01/c9de5278fe86fb581d5cc4f9b690e589.gif
+2017-03-08 13:56:39,881 [Thread-57:139969947490048] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 13:56:39,921 [Thread-58:139969939097344] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 13:56:39,941 [Thread-62:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 13:56:39,963 [Thread-63:139969939097344] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 13:56:39,973 [Thread-64:139969947490048] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 13:56:39,996 [Thread-67:139969930704640] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:01:50,714 [Thread-74:139969939097344] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /my/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/response.py", line 84, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/response.py", line 66, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 242, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 802, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 603, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 703, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(0,5)' from 'range(0,5)'
+2017-03-08 14:05:01,109 [Thread-75:139969939097344] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /my/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/response.py", line 84, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/response.py", line 66, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 242, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 802, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 603, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 703, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '[0,1,2]' from '[0,1,2]'
+2017-03-08 14:05:02,379 [Thread-76:139969939097344] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /my/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/response.py", line 84, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/response.py", line 66, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 242, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 802, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 603, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 703, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '[0,1,2]' from '[0,1,2]'
+2017-03-08 14:05:50,364 [Thread-77:139969939097344] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /my/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/response.py", line 84, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/response.py", line 66, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 48, in select_template
+    return engine.get_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 242, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 794, in do_for
+    " 'for x in y': %s" % token.contents)
+django.template.exceptions.TemplateSyntaxError: 'for' statements should use the format 'for x in y': for item in '12345'| make_list
+2017-03-08 14:06:27,985 [Thread-82:139969939097344] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 14:06:27,996 [Thread-81:139969930704640] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:06:28,004 [Thread-84:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 14:06:28,010 [Thread-85:139969964275456] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 14:06:28,013 [Thread-83:139969947490048] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 14:06:28,014 [Thread-86:139969955882752] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 14:06:28,093 [Thread-92:139969964275456] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:08:22,370 [Thread-100:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:08:22,434 [Thread-103:139969964275456] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 14:08:22,436 [Thread-101:139969939097344] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 14:08:22,442 [Thread-102:139969955882752] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 14:08:22,458 [Thread-104:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 14:08:22,476 [Thread-105:139969947490048] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 14:08:22,488 [Thread-106:139969939097344] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:08:25,341 [Thread-115:139969939097344] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:08:25,350 [Thread-116:139969947490048] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 14:08:25,368 [Thread-117:139969955882752] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 14:08:25,425 [Thread-120:139969947490048] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 14:08:25,428 [Thread-118:139969939097344] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 14:08:25,435 [Thread-119:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 14:08:25,483 [Thread-129:139969930704640] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:11:00,055 [Thread-134:139969930704640] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:11:00,057 [Thread-135:139969964275456] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 14:11:00,061 [Thread-136:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg
+2017-03-08 14:11:00,074 [Thread-137:139969939097344] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg
+2017-03-08 14:11:00,099 [Thread-138:139969930704640] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png
+2017-03-08 14:11:00,129 [Thread-139:139969939097344] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg
+2017-03-08 14:11:00,146 [Thread-140:139969930704640] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:13:04,753 [Thread-147:139969930704640] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:13:04,827 [Thread-149:139969939097344] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:13:04,843 [Thread-148:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg
+2017-03-08 14:16:12,396 [Thread-158:139969939097344] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:16:12,506 [Thread-164:139969947490048] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:19:56,913 [Thread-174:139969964275456] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:19:56,980 [Thread-180:139969964275456] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:20:48,051 [Thread-190:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:20:48,127 [Thread-196:139969955882752] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:24:04,502 [Thread-206:139969955882752] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:24:04,580 [Thread-212:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:25:10,500 [Thread-222:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:25:10,620 [Thread-228:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:28:04,691 [Thread-236:139969955882752] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:28:04,736 [Thread-237:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:28:06,347 [Thread-244:139969964275456] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:28:06,427 [Thread-245:139969964275456] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:28:07,169 [Thread-251:139969955882752] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:28:07,265 [Thread-252:139969955882752] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:28:08,011 [Thread-258:139969947490048] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:28:08,076 [Thread-259:139969947490048] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:28:09,563 [Thread-267:139969947490048] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:28:09,657 [Thread-273:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:29:35,696 [Thread-281:139969913919232] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:29:35,821 [Thread-282:139969913919232] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:30:37,370 [Thread-288:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:30:37,419 [Thread-289:139969922311936] [django.request:152] [base:get_response] [WARNING]- Not Found: /skin/blog/images/new.gif
+2017-03-08 14:30:44,331 [Thread-298:139969939097344] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:36:10,403 [Thread-313:139969913919232] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 14:54:24,502 [Thread-8:140674875782912] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/life/2014-07-10/43baa4c7c03ed66bae98696de5ebc64e.jpg
+2017-03-08 14:54:24,504 [Thread-7:140674842212096] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/life/2014-07-31/ae167e7d81612318949460aad1143e0d.jpg
+2017-03-08 14:54:24,506 [Thread-5:140674858997504] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2016-05-20/affe47e8bc5569ba769e4699122dc773.jpg
+2017-03-08 14:54:24,508 [Thread-9:140674867390208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/read/2014-06-30/a85973b7e8d151108aee2deb83c18f97.jpg
+2017-03-08 14:54:24,509 [Thread-6:140674850604800] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2015-01-23/7b1559b0c4343a005531ef245a5c5246.jpg
+2017-03-08 14:54:24,511 [Thread-10:140674951825152] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2014-06-14/072f267a54748c6e71d40a2d03978993.jpg
+2017-03-08 14:54:24,554 [Thread-11:140674951825152] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2014-04-09/0b5fad3a513ad04e92764533b772070c.jpg
+2017-03-08 14:54:24,556 [Thread-12:140674850604800] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/read/2014-03-29/77b611cfb3dd41e23b77da8807847066.png
+2017-03-08 14:54:24,560 [Thread-15:140674875782912] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/humor/2014-01-13/67ce0f90b72e884e562d3360575ab3c3.jpg
+2017-03-08 14:54:24,564 [Thread-13:140674858997504] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2014-03-12/e96b6421ebf79a3a5999ef5dc61ebf74.jpg
+2017-03-08 14:54:24,566 [Thread-16:140674842212096] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2014-01-08/9812570f27712222f38b851be2529445.jpg
+2017-03-08 14:54:24,568 [Thread-14:140674867390208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2014-01-29/25490122491a9e74d4153ef5e59a3031.jpg
+2017-03-08 14:54:24,607 [Thread-17:140674842212096] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2014-01-04/cb83fc3e74125e79a3c508eecbe99cda.jpg
+2017-03-08 14:54:24,609 [Thread-18:140674867390208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2014-01-04/8f91a94816062276afe62062ef271239.jpg
+2017-03-08 14:54:24,617 [Thread-22:140674850604800] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2013-11-22/5fafd3ebc31c323311092c440bcf41bf.jpg
+2017-03-08 14:54:24,618 [Thread-19:140674858997504] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2014-01-04/9129a0317b9e3dda6b8e5e4af8f21b60.jpg
+2017-03-08 14:54:24,620 [Thread-21:140674875782912] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2013-11-25/6abfdd1f080561acedbd2606210951eb.png
+2017-03-08 14:54:24,622 [Thread-20:140674951825152] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2013-11-22/a3c55e350d32ad1400c75a2b60199b72.jpg
+2017-03-08 14:54:24,668 [Thread-23:140674850604800] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/life/2013-11-04/ece90225741da3a78b1d0aeed8d8011d.jpg
+2017-03-08 14:54:24,670 [Thread-24:140674951825152] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2013-10-21/ce395dcf77bddfafb9973e07447225d5.png
+2017-03-08 14:54:24,672 [Thread-25:140674858997504] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/life/2014-05-29/14e1dfa5574ba3a81a22ad7d11252405.jpg
+2017-03-08 14:54:24,674 [Thread-26:140674867390208] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/life/2014-05-29/5df13380b6a6a72775c94cc8cc212dc1.jpg
+2017-03-08 14:54:24,676 [Thread-27:140674875782912] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/life/2014-05-29/37b2762ee25cd73e39019c57eb6c6135.jpg
+2017-03-08 14:54:24,680 [Thread-28:140674842212096] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2013-09-08/15ebc95225a98f1519fdbaa3a928f054.png
+2017-03-08 14:54:24,694 [Thread-29:140674858997504] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/read/2014-05-28/67a7974f2799dfc613442cc5a07ec587.jpg
+2017-03-08 14:55:23,596 [Thread-35:140674951825152] [django.request:152] [base:get_response] [WARNING]- Not Found: /news/index_2.html
+2017-03-08 15:08:16,775 [Thread-45:140674875782912] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2016-05-20/affe47e8bc5569ba769e4699122dc773.jpg
+2017-03-08 15:08:16,923 [Thread-47:140674842212096] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2016-05-20/affe47e8bc5569ba769e4699122dc773.jpg
+2017-03-08 15:10:29,950 [Thread-55:140674842212096] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2016-05-20/affe47e8bc5569ba769e4699122dc773.jpg
+2017-03-08 15:32:18,340 [Thread-156:140674951825152] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/download/div/2016-09-11/03ee75acd46bf67982975e8c88d9a5e9.jpg
+2017-03-08 16:03:10,661 [Thread-3:140479211144960] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:03:10,664 [Thread-8:140478959830784] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2015-01-23/8a868b7bae6a4b94d3bd41283d79b7a6.jpg
+2017-03-08 16:04:56,912 [Thread-16:140478959830784] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:04:56,939 [Thread-17:140478959830784] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2015-01-23/8a868b7bae6a4b94d3bd41283d79b7a6.jpg
+2017-03-08 16:04:57,029 [Thread-19:140479211144960] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:04:57,068 [Thread-21:140478951438080] [django.request:152] [base:get_response] [WARNING]- Not Found: /d/file/news/s/2015-01-23/8a868b7bae6a4b94d3bd41283d79b7a6.jpg
+2017-03-08 16:06:22,497 [Thread-29:140479211144960] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:06:22,623 [Thread-30:140479211144960] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:06:54,954 [Thread-39:140478951438080] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:06:55,108 [Thread-40:140479211144960] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:07:44,721 [Thread-48:140479211144960] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:07:44,861 [Thread-49:140478951438080] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:08:57,303 [Thread-60:140479200040704] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:08:57,397 [Thread-61:140479200040704] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:09:53,974 [Thread-74:140479200040704] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:09:54,114 [Thread-75:140479200040704] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:10:02,258 [Thread-86:140479211144960] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:10:02,306 [Thread-87:140479211144960] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:10:13,882 [Thread-103:140478985008896] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:10:13,993 [Thread-104:140478985008896] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:10:52,342 [Thread-117:140478959830784] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:10:52,460 [Thread-118:140478959830784] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:10:54,308 [Thread-125:140479211144960] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:10:54,383 [Thread-126:140479211144960] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:10:55,228 [Thread-133:140479211144960] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:10:55,321 [Thread-134:140479211144960] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:10:56,715 [Thread-145:140479200040704] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:10:56,814 [Thread-146:140479200040704] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:10:59,214 [Thread-162:140478985008896] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:10:59,305 [Thread-163:140478985008896] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:11:02,785 [Thread-179:140479211144960] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:11:02,863 [Thread-180:140479211144960] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:13:47,927 [Thread-201:140479200040704] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:13:48,050 [Thread-202:140479200040704] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:13:50,584 [Thread-218:140478976616192] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:13:50,680 [Thread-219:140478976616192] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:13:52,951 [Thread-235:140478968223488] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:13:53,007 [Thread-236:140478968223488] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:14:56,966 [Thread-252:140478968223488] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:14:57,075 [Thread-253:140478968223488] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:17:11,205 [Thread-269:140478976616192] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:17:11,434 [Thread-273:140479200040704] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:18:16,554 [Thread-283:140479211144960] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:18:16,636 [Thread-284:140479211144960] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:18:51,069 [Thread-292:140479200040704] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:18:51,169 [Thread-294:140479200040704] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:23:58,758 [Thread-304:140478968223488] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:23:58,844 [Thread-305:140478968223488] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:24:53,495 [Thread-321:140478985008896] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:24:53,633 [Thread-322:140478985008896] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:26:28,059 [Thread-337:140479200040704] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:26:28,142 [Thread-338:140479200040704] [django.request:152] [base:get_response] [WARNING]- Not Found: /e/public/ViewClick/
+2017-03-08 16:50:28,100 [Thread-2:139764795700992] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin/index
+2017-03-08 17:45:21,177 [Thread-25:140468494497536] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-08 17:47:38,096 [Thread-2:139828958234368] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-08 17:48:32,007 [Thread-2:140550053295872] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-08 17:48:32,908 [Thread-3:140550044903168] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-08 17:48:33,409 [Thread-4:140550036510464] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-08 17:48:33,808 [Thread-5:140550028117760] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-08 17:48:34,322 [Thread-6:140550019725056] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-08 17:49:25,312 [Thread-3:140023599822592] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-08 17:49:37,302 [Thread-2:139830639400704] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-08 17:49:39,878 [Thread-3:139830639400704] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-08 17:53:49,982 [Thread-2:140682391975680] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/5
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: article() takes 1 positional argument but 2 were given
+2017-03-08 17:54:58,960 [Thread-2:140482072016640] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/id
+2017-03-08 17:54:59,856 [Thread-3:140482072016640] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/id
+2017-03-08 17:55:00,346 [Thread-4:140482072016640] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/id
+2017-03-08 17:55:00,600 [Thread-5:140482072016640] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/id
+2017-03-08 17:55:00,851 [Thread-6:140482072016640] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/id
+2017-03-08 17:55:14,293 [Thread-7:140482072016640] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/11
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: article() takes 1 positional argument but 2 were given
+2017-03-08 17:56:37,486 [Thread-2:140161492973312] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/11
+2017-03-08 17:56:43,866 [Thread-3:140161492973312] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-08 17:56:48,636 [Thread-4:140161492973312] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-08 17:56:51,342 [Thread-5:140161482393344] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-08 17:58:33,482 [Thread-7:140161492973312] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-08 17:58:34,257 [Thread-8:140161482393344] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-08 17:58:34,630 [Thread-9:140161492973312] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-08 17:58:34,847 [Thread-10:140161482393344] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-08 17:58:35,073 [Thread-11:140161492973312] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/5
+2017-03-09 08:28:44,982 [Thread-16:140409728661248] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-09 09:24:24,752 [Thread-38:139801630066432] [django.request:152] [base:get_response] [WARNING]- Not Found: /test/
+2017-03-09 09:24:45,950 [Thread-43:139801655244544] [django.request:152] [base:get_response] [WARNING]- Not Found: /my/test/
+2017-03-09 09:24:54,447 [Thread-44:139801878406912] [django.request:152] [base:get_response] [WARNING]- Not Found: /my/test/
+2017-03-09 10:26:33,587 [Thread-2:139867919120128] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:27:25,014 [Thread-8:139867681974016] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:27:25,785 [Thread-9:139867690366720] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:27:26,505 [Thread-10:139867673581312] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:27:27,064 [Thread-11:139867902334720] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:27:27,307 [Thread-12:139867919120128] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:27:27,516 [Thread-13:139867673581312] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:27:27,754 [Thread-14:139867673581312] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:27:28,455 [Thread-15:139867673581312] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:27:29,145 [Thread-16:139867673581312] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:28:38,715 [Thread-17:139867673581312] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:28:39,303 [Thread-18:139867673581312] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:28:39,554 [Thread-19:139867673581312] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:28:41,986 [Thread-2:140273950734080] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:30:37,193 [Thread-2:139726221219584] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:31:39,624 [Thread-16:139726201460480] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:32:52,276 [Thread-2:140177658283776] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:32:53,419 [Thread-3:140177649891072] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /about
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view myapp.views.about didn't return an HttpResponse object. It returned None instead.
+2017-03-09 10:59:00,372 [Thread-12:140199961806592] [django.request:152] [base:get_response] [WARNING]- Not Found: /about.html
+2017-03-09 10:59:41,620 [Thread-13:140199961806592] [django.request:152] [base:get_response] [WARNING]- Not Found: /about.html
+2017-03-09 10:59:42,587 [Thread-14:140199961806592] [django.request:152] [base:get_response] [WARNING]- Not Found: /about.html
+2017-03-09 10:59:42,816 [Thread-15:140199961806592] [django.request:152] [base:get_response] [WARNING]- Not Found: /about.html
+2017-03-09 10:59:43,009 [Thread-16:140199961806592] [django.request:152] [base:get_response] [WARNING]- Not Found: /about.html
+2017-03-09 11:44:11,156 [Thread-11:139949798045440] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /title/
+Traceback (most recent call last):
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zmm/PycharmProjects/learn/myDjango/myapp/views.py", line 147, in title
+    return render(request,'wx/article.html',locals())
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/loader_tags.py", line 242, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/defaulttags.py", line 803, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 485, in parse
+    raise self.error(token, 'Empty variable tag on line %d' % token.lineno)
+django.template.exceptions.TemplateSyntaxError: Empty variable tag on line 17

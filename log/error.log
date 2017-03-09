@@ -1,0 +1,2 @@
+2017-02-20 11:47:15,022 [Thread-2:140395913213696] [myapp.views:58] [ERROR]- global_setting() missing 1 required positional argument: 'request'
+2017-02-20 11:47:16,026 [Thread-3:140395913213696] [myapp.views:58] [ERROR]- global_setting() missing 1 required positional argument: 'request'

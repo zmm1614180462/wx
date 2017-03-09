@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/hello.css' %}">
+</head>
+<body>
+{{ time }}
+<div>你好djangozzzz</div>
+<script src="{% static 'js/jquery.js' %}"></script>
+<script>
+    $.ajaxSetup({
+         data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+    })
+</script>
+<script>
+    $.ajax({
+        url:'http://localhost:8000/users/2',
+        method:'get',
+        data:'',
+        success:function (data) {
+            console.log(data);
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{% extends 'wx/base.html' %}
+{% load staticfiles %}
+{% block css %}<link href="{% static 'wx/css/about.css' %}" rel="stylesheet">{% endblock %}
+{% block content %}
+  <article class="aboutcon">
+<h1 class="t_nav"><span>n像“草根”一样，紧贴着地面，低调的存在，冬去春来，枯荣无恙。</span><a href="/" class="n1">网站首页</a><a href="/about.html" class="n2">关于我</a></h1>
+<div class="about left">
+  <h2>Just about me</h2>
+    <ul>
+        {{ article.content | safe}}
+    </ul>
+
+
+</div>
+<aside class="right">
+    <div class="about_c">
+    <p>网名：<span>DanceSmile</span> | 即步非烟</p>
+    <p>姓名：杨青 </p>
+    <p>籍贯：四川省—成都市</p>
+    <p>现居：天津市—滨海新区</p>
+    <p>职业：网站设计、网站制作</p>
+<p>副业：<a href="http://shop35160146.taobao.com/index.htm" target="_blank" class="blog_link">进口休闲零食淘宝店</a></p>
+    <p>喜欢的书：《红与黑》《红楼梦》</p>
+    <p>喜欢的音乐：《burning》《just one last dance》《相思引》</p>
+<p>
+
+
+</div>
+</aside>
+</article>
+{% endblock %}

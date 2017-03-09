@@ -1,0 +1,54 @@
+{% load staticfiles %}
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>王鑫个人博客</title>
+    <meta name="keywords" content="王鑫个人博客">
+    <meta name="description" content="王鑫个人博客">
+    <link href="{% static 'wx/css/base.css' %}" rel="stylesheet">
+    {% block css %}{% endblock%}
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'wx/css/lrtk.css' %}">
+
+
+</head>
+<body>
+<header>
+    <div id="logo"><a href="/"></a></div>
+    <nav class="topnav" id="topnav">
+        <a href="/"><span>首页</span><span class="en">index</span></a>
+
+        <a href="/about"><span>关于我</span><span class="en">About</span></a>
+        {% for category in category_list %}
+            <a href="/title/?id={{ category.id  }}&category={{category.name  }} "><span>{{ category.name }}</span><span class="en">About</span></a>
+        {% endfor %}
+        <a href="javascript:;"><span>留言板</span><span class="en">GuestBook</span></a>
+
+    </nav>
+
+</header>
+{% block content %}{% endblock %}
+
+<div id="tbox">
+    <a id="gotop" href="javascript:void(0)" style="display: block;"></a>
+</div>
+<footer>
+    <p>Design by DanceSmile <a href="javascript:;" target="_blank">豫ICP备xxxxxx号</a>
+    </p>
+</footer>
+
+</body>
+
+<script>
+
+$(document).ready(function(e) {
+	$('#gotop').click(function(){
+		$(document).scrollTop(0);
+	})
+});
+
+
+</script>
+</html>

@@ -1,0 +1,53 @@
+{% extends 'wx/base.html' %}
+{% load staticfiles %}
+{% block css %}<link href="{% static 'wx/css/index.css' %}" rel="stylesheet">{% endblock %}
+{% block content %}
+    <div class="banner">
+    <section class="box">
+        {% include 'wx/banner.html' %}
+        <div class="avatar">
+            <a href="about.html"><span>王鑫</span></a>
+        </div>
+    </section>
+</div>
+    <div class="template">
+    <div class="box">
+        <h3><p><span>个人博客</span>模板 Templates</p></h3>
+        <ul>
+            {% for item in '12345' %}
+            <li>
+                <a href="javascript:;" title="个人博客评测，你敢来，我就敢说！（第一期）">
+                    <img
+                    src=""
+                    alt="个人博客评测，你敢来，我就敢说！（第一期）">
+                </a>
+                <span>个人博客评测，你敢来，我就敢说！（第一期）</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+    <article>
+    <h2 class="title_tj">
+        <p>文章<span>推荐</span></p>
+    </h2>
+    <div class="bloglist left">
+        {% for article in article_list %}
+        <h3><a href="javascript:;">【匆匆那些年】{{ article.title }}…</a></h3>
+        <figure>
+            <img src="" alt="图片你还抄袭么">
+        </figure>
+        <ul>
+            <p>{{ article.desc }}</p>
+            <a title="" href="/article/?id={{ article.id }}" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+        </ul>
+        <p class="dateview">
+            <span>{{ article.date_publish  }}</span>
+            <span>作者：王鑫</span>
+            <span>个人博客：[<a href="javascript:;">心得笔记</a>]</span>
+        </p>
+        {% endfor %}
+    </div>
+    {% include 'wx/aside.html' %}
+</article>
+{% endblock %}

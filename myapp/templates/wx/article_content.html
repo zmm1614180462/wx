@@ -1,0 +1,99 @@
+{% extends 'wx/base.html' %}
+{% load staticfiles %}
+{% block css %}
+    <link href="{% static 'wx/css/content.css' %}" rel="stylesheet">{% endblock %}
+{% block content %}
+    <article class="blogs">
+        <h1 class="t_nav"><span>您当前的位置：<a href="/">首页</a>&nbsp;&gt;&nbsp;<a href="javascript:;">慢生活</a>&nbsp;&gt;&nbsp;<a
+                href="javascript:;">日记</a></span><a href="/" class="n1">网站首页</a><a href="#" class="n2">日记</a></h1>
+        <div class="index_about">
+            <h2 class="c_titile">{{ article.title }}</h2>
+            <p class="box_c"><span class="d_time">发布时间：{{ article.date_publish }}</span><span>编辑：<a
+                    href="javascript:;">王鑫</a></span><span>阅读（0）</span></p>
+            <ul class="infos">
+                {{ article.content | safe }}
+
+                <p align="center" class="pageLink"></p>
+
+            </ul>
+            <div class="keybq">
+                <p><span>关键字词</span>：{{ article.desc }}</p>
+            </div>
+            <div class="ad">
+
+            </div>
+            <div class="nextinfo">
+                <p>上一篇：
+                    {% if article_last %}
+                        {% for art in article_last %}
+                        <a href="{% url 'article' %}?id={{ art.id }}">{{ art.title }}</a>
+                        {% endfor %}
+                    {% else %}
+                        <a href="javascript:;">没有更多了</a>
+                    {% endif %}
+                </p>
+                <p>下一篇：
+                    {% if article_next %}
+                        {% for art in article_next %}
+                        <a href="{% url 'article' %}?id={{ art.id }}">{{ art.title }}</a>
+                        {% endfor %}
+                    {% else %}
+                        <a href="javascript:;">没有更多了</a>
+                    {% endif %}
+
+                </p>
+            </div>
+            <div class="otherlink">
+                <h2>相关文章</h2>
+                <ul>
+                    无相关信息
+                </ul>
+            </div>
+            <div class="blank"></div>
+            <!-- Duoshuo Comment BEGIN -->
+
+            <!-- Duoshuo Comment END -->
+        </div>
+        <aside class="right">
+            <div class="rnav">
+                <h2>栏目导航</h2>
+                <ul>
+                    <li class="rnav1"><a href="javascript:;">日记</a></li>
+                    <li class="rnav2"><a href="javascript:;">欣赏</a></li>
+                    <li class="rnav3"><a href="javascript:;">程序人生</a></li>
+                    <li class="rnav4"><a href="javascript:;">经典语录</a></li>
+                </ul>
+            </div>
+            <div class="blank"></div>
+            <div class="news">
+                <h3>
+                    <p>栏目<span>最新</span></p>
+                </h3>
+                <ul class="rank">
+                    <li><a href="/news/s/2016-05-20/751.html" title="IP要突破2000+了" target="_blank">IP要突破2000+了</a></li>
+                    <li><a href="/news/s/2015-01-23/741.html" title="【孕期日记】生活本该如此" target="_blank">【孕期日记】生活本该如此</a></li>
+                    <li><a href="/news/s/2014-06-14/690.html" title="伪球迷看世界杯" target="_blank">伪球迷看世界杯</a></li>
+                    <li><a href="/news/s/2014-04-09/660.html" title="犯错了怎么办？" target="_blank">犯错了怎么办？</a></li>
+                    <li><a href="/news/s/2014-03-12/653.html" title="春暖花开-走走停停-发现美" target="_blank">春暖花开-走走停停-发现美</a>
+                    </li>
+                    <li><a href="/news/s/2014-01-29/648.html" title="简单手工纸玫瑰" target="_blank">简单手工纸玫瑰</a></li>
+                    <li><a href="/news/s/2014-01-08/635.html" title="个人博客从简不繁" target="_blank">个人博客从简不繁</a></li>
+                    <li><a href="/news/s/2014-01-04/634.html" title="云南之行——丽江古镇玉龙雪山" target="_blank">云南之行——丽江古镇玉龙雪山</a>
+                    </li>
+                </ul>
+                <h3 class="ph">
+                    <p>点击<span>排行</span></p>
+                </h3>
+                <ul class="paih">
+                    <li><a href="/news/s/2015-01-23/741.html" title="【孕期日记】生活本该如此" target="_blank">【孕期日记】生活本该如此</a></li>
+                    <li><a href="/news/s/2016-05-20/751.html" title="IP要突破2000+了" target="_blank">IP要突破2000+了</a></li>
+                    <li><a href="/news/s/2014-01-08/635.html" title="个人博客从简不繁" target="_blank">个人博客从简不繁</a></li>
+                    <li><a href="/news/s/2014-04-09/660.html" title="犯错了怎么办？" target="_blank">犯错了怎么办？</a></li>
+                    <li><a href="/news/s/2014-01-04/632.html" title="云南之行——初到昆明滇池半日游"
+                           target="_blank">云南之行——初到昆明滇池半日游</a></li>
+                </ul>
+            </div>
+            <div class="blank"></div>
+        </aside>
+    </article>
+{% endblock %}
