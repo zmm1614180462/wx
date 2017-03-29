@@ -1423,3 +1423,5 @@ Traceback (most recent call last):
   File "/home/zmm/.pyenv/versions/learn/lib/python3.5/site-packages/django/template/base.py", line 485, in parse
     raise self.error(token, 'Empty variable tag on line %d' % token.lineno)
 django.template.exceptions.TemplateSyntaxError: Empty variable tag on line 17
+2017-03-13 07:23:14,997 [Thread-16:139720185083648] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-03-29 09:33:32,252 [Thread-17:139633950193408] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
